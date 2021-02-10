@@ -75,7 +75,8 @@ Above routes would resolve in the following order:
 `Echo#Group(prefix string, m ...Middleware) *Group`
 
 Routes with common prefix can be grouped to define a new sub-router with optional
-middleware. In addition to specified middleware group also inherits parent middleware.
+middleware. In addition to specified middleware group also inherits middleware from
+parent router.
 To add middleware later in the group you can use `Group.Use(m ...Middleware)`.
 Groups can also be nested.
 
